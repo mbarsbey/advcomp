@@ -164,7 +164,7 @@ def get_wrane_mask(dims, color_width, window_width):
 import zlib
 import hashlib
 import random
-## From ChatGPT
+
 def rng_state_summary():
     # PyTorch RNG state
     pytorch_state = torch.get_rng_state().numpy()

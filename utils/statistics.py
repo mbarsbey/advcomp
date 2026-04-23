@@ -949,8 +949,6 @@ def compute_class_selectivity_index(arr, eps=1e-6, return_max_idx=False):
 
 def partition_mask(mask, class_index, seed=42):
     """
-    From ChatGPT, 2024-02-28
-    
     Partitions the pixels in the mask between 10 classes, sets the pixels
     associated with the specified class index to True, and the rest to False.
     

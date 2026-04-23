@@ -113,7 +113,6 @@ def evaluate(eval_loader, net, crit, args, print_std=True, bias_breakdown=False,
 
 ### RESULTS FOLDER PROCESSING
 def k_most_recently_modified(folders, k, modification_times):
-    # Help from ChatGPT
     modification_times = [(os.path.getmtime(folder), folder) for folder in folders]
     most_recent = heapq.nlargest(k, modification_times)
     return [folder for _, folder in most_recent]

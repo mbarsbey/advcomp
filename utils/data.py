@@ -259,7 +259,6 @@ def get_data(args=None, return_biased=False, abtrain=False, **kwargs):
     return train_loader, eval_loaders, num_classes, input_dim
 
 
-# From ChatGPT
 class IndexedDataset(Dataset):
     def __init__(self, dataset):
         self.dataset = dataset

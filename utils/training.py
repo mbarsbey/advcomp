@@ -171,7 +171,6 @@ def get_activation(activation):
         raise KeyError("Activation function not recognized.")
 
 
-#from ChatGPT
 def set_track_running_stats(model, value=False):
     for module in model.modules():
         if isinstance(module, nn.modules.batchnorm._BatchNorm):
